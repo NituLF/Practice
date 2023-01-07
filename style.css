@@ -29,6 +29,7 @@ a {
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 .row {
@@ -51,6 +52,7 @@ img {
     color: #243e63;
     font-size: 48px;
     font-weight: 900;
+    max-width: 94%;
 }
     
 .section__para {
@@ -58,6 +60,8 @@ img {
     font-size: 18px;
     font-weight: 500;
     line-height: 1.6;
+    margin-top: 24px;
+    max-width: 94%;
 }
 
 /* 
@@ -69,7 +73,7 @@ NAV
 .logo {
     width: 40px;
 }
-.nav__left {
+.nav__logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,11 +184,15 @@ HEADER
 
  }
  input {
-    border-style: none;
+    border: none;
    margin: 18px 22px;
    font-size: 18px;
-   opacity: 0.4;
+   opacity: 0.3;
  }
+
+ form:hover {
+    border: 2px solid rgb(164, 163, 163);
+ } 
 
 
 .btn {
@@ -192,7 +200,7 @@ HEADER
     color: #fff;
     border-radius: 24px;
     padding: 12px 28px;
-    margin-right: 2px;
+    margin-right: 4px;
     font-size: 14px;
     font-weight: 700;
     transition: all 300ms ease;
@@ -238,17 +246,12 @@ FEATURES
     text-align: center;
 }
 
-.title {
-    font-weight: 900;
-    font-size: 48px;
-    color: #243e63;
-}
-
-.subtitle {
+.features__para {
     color: #7c8ba1;
     text-align: center;
     width: 100%;
     max-width: 580px;
+    margin-top: 24px;
 }
 
 .highlights {
@@ -264,13 +267,13 @@ FEATURES
     width: 33.333%;
 }
 
-.highlight__title {
+.highlights__title {
     color: #243e63;
     font-size: 24px;
     margin-bottom: 24px;
 }
 
-.highlight__subtitle {
+.highlights__para {
     color: #7c8ba1;
     line-height: 1.5;
     font-size: 18px;
@@ -300,8 +303,7 @@ QUALITY SECTION
 
 .quality__text {
     width: 50%;
-    padding: 24px;
-    
+    padding-right: 24px;
 }
 
 .quality__title {
@@ -352,7 +354,7 @@ STEPS
 
 .steps__box {
     display: flex;
-    margin-bottom: 28px;
+    margin: 28px 0;
 }
 
 .steps__header {
@@ -476,7 +478,7 @@ PRICING
     text-align: center;
     width: calc(100vw / 3);
     border: 1px solid lightgrey;
-    margin: 16px;
+    margin: 0 16px;
 }
  .plans__personal{
     border-top: 8px solid rgb(38, 196, 183);
@@ -488,19 +490,11 @@ PRICING
     border-top: 8px solid rgb(85, 55, 219);
     background: linear-gradient(to bottom, #5332e6, #916cf5 );
     color: white;
-
  }
 
  .plans__enterprise {
     border-top: 8px solid rgb(236, 131, 143);
-    
     border-radius: 8px;
- }
-
- .plan__description {
-    border-bottom: 2px solid lightgrey;
-    border-top: 2px solid lightgrey;
-
  }
 
  .plan__title {
@@ -519,14 +513,16 @@ PRICING
     margin-bottom: 28px;
  }
 
+ .plan__description {
+    border-bottom: 2px solid lightgrey;
+    border-top: 2px solid lightgrey;
+    margin: 32px 16px;
+ }
+
  .plan__description--para {
     margin: 32px;
     color: #7c8ba1;
     font-weight: 500;
- }
-
- .plan__description {
-    margin: 32px 16px;
  }
 
  .plan__btn {
@@ -542,6 +538,20 @@ PRICING
     cursor: pointer;
  }
 
+ .plan__btn:hover {
+    transform-origin: top;
+    transform: perspective(500px) scaleZ(1.1) rotateX(0);
+    margin-left: 4px;
+    box-shadow: 2px 18px 22px rgba(0, 0, 0, 0.1);
+ }
+ .plan__btn--business:hover {
+    transform-origin: top;
+    transform: perspective(500px) scaleZ(1.1) rotateX(0);
+    margin-left: 4px;
+    box-shadow: 2px 18px 22px rgba(0, 0, 0, 0.1);
+    background-color: lightgray;
+ }
+
  .plan__btn--personal {
     background: linear-gradient(to right, #4ed2b9, #7ff8e2 );
  }
@@ -553,7 +563,6 @@ PRICING
 
  .plan__btn--enterprise {
     background: linear-gradient(to right, #e94346, #f48b8b );
-    
  }
 
  .plan__description--title {
@@ -574,6 +583,8 @@ PRICING
     font-weight: 500;
     line-height: 1.6;
     max-width: 600px;
+    margin-top: 24px;
+
  }
 
 
@@ -609,9 +620,8 @@ PRICING
  .review__para {
     margin-top: 22px;
     color: #243e63;
+    max-width: 92%;
  }
-
-
 
  .btn__left {
     font-size: 18px;
@@ -631,7 +641,7 @@ PRICING
 
 .buttons {
     display: flex;
-    margin-left: 24px;
+    padding-right: 32px;
 }
 
  .divider {
@@ -639,7 +649,7 @@ PRICING
     border: 1px solid lightgray;
  }
 
- .first__person {
+ .client {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -663,40 +673,6 @@ PRICING
     margin-left: 24px;
  }
 
- /* 
- 
- CONTACT
- 
- */
-
- .contact__row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(85, 44, 197);
-    padding: 100px 200px;
-    border-radius: 12px;
-    margin-bottom: 200px;
- }
-
- .contact__buttons {
-    display: flex;
-    margin-left: 40px;
- }
-
- .button__left {
-    padding: 12px 24px;
-    border-radius: 32px;
-    margin-right: 24px;
- }
-
- .button__right {
-    padding: 12px 24px;
-    border-radius: 32px;
- }
 
  /* 
  
@@ -716,7 +692,7 @@ PRICING
  .footer__links {
     display: flex;
     width: 100%;
-    padding-bottom: 60px;
+    margin-bottom: 40px;
  }
 
  .main__list {
@@ -759,6 +735,12 @@ PRICING
     font-size: 14px;
     background-color: #fff;
     border-radius: 50%;
+    border: none;
+    transition: all 300ms ease;
+ }
+
+ .slink:hover {
+    background-color: rgb(180, 176, 176);
  }
 
  .links__title {
@@ -772,7 +754,30 @@ PRICING
     font-weight: 500;
     padding-bottom: 12px;
     text-align: left;
+    margin-bottom: 12px;
+    transition: all 300ms ease;
+    position: relative;
+ }
 
+.link:hover:before {
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+ .link:hover:after {
+    content: "";
+    display: block;
+    width: 75%;
+    padding-top: 6px;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+ }
+
+ .link:hover {
+    cursor: pointer;
  }
 
  .copyrights {
