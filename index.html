@@ -8,6 +8,7 @@
     <title>Treact</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -28,10 +29,39 @@
                         <a href="#signup" class="nav__link--signup">Sign Up</a>
                     </div>
                 </ul>
+            
+            <div class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
             </div>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Conntact Us</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Login</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link nav__link--signup" onclick="closeMenu()">Sign Up</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </nav>
         <header>
-            <div class="row">
+            <div class="row media__row2">
                 <div class="header__description">
                     <h2 class="header__title">Beautiful React Templates <span class="purple">for you</span></h2>
                     <p class="header__para">Our templates are easy to setup, understand annd customize. Fully modular
@@ -122,10 +152,10 @@
             </div>
         </section>
         <section id="quality">
-            <div class="row">
+            <div class="row media__row">
                 <div class="quality__text">
                     <h3 class="section__title"><span class="purple">QUALITY WORK</span></h3>
-                    <h1>Designed & Developed by <span class="purple">Professionals.</span></h1>
+                    <h1 class="section__subtitle">Designed & Developed by <span class="purple">Professionals.</span></h1>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -137,14 +167,14 @@
             </div>
         </section>
         <section id="steps">
-            <div class="row">
+            <div class="row media__row2">
                 <figure class="steps__img">
                     <img src="/assets/mockup.png" alt="">
                 </figure>
                 <div class="steps__text">
                     <div class="steps__header">
                         <h3 class="section__title"><span class="purple">STEPS</span></h3>
-                        <h1>Easy to <span class="purple">Get Started</span></h1>
+                        <h1 class="section__subtitle">Easy to <span class="purple">Get Started</span></h1>
                     </div>
                     <div class="steps__box">
                         <div class="number">
@@ -180,10 +210,10 @@
             </div>
         </section>
         <section id="values">
-            <div class="row">
+            <div class="row media__row">
                 <div class="values__text">
                     <h3 class="section__title"><span class="purple">VALUES</span></h3>
-                    <h1>We Always Abide by Our <span class="purple">Principles</span></h1>
+                    <h1 class="section__subtitle">We Always Abide by Our <span class="purple">Principles</span></h1>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -217,13 +247,14 @@
             </div>
         </section>
         <section id="pricing">
+            <div class="meddia__row">
             <div class="header">
                 <h3 class="section__title"><span class="purple">PRICING</span></h3>
-                <h1>Reasonable & Flexible <span class="purple">Plans</span></h1>
+                <h1 class="section__subtitle">Reasonable & Flexible <span class="purple">Plans</span></h1>
                 <p class="section__para--plan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
-            <div class="row">
+            <div class="row plans">
                 <div class="plans__personal column">
                     <div class="price">
                         <h2 class="plan__title">PERSONAL</h2>
@@ -270,13 +301,14 @@
                     <button class="plan__btn plan__btn--enterprise">Buy Now</button>
                 </div>
             </div>
+        </div>
         </section>
         <section id="testimonials">
-            <div class="row">
+            <div class="row media__row2">
                 <figure class="testimonial__img"><img src="/assets/testimonials.svg" alt=""></figure>
                 <div class="text__column">
                     <h3 class="section__title"><span class="purple">TESTIMONIALS</span></h3>
-                    <h1>Our Clients <span class="purple">Love Us</span></h1>
+                    <h1 class="section__subtitle">Our Clients <span class="purple">Love Us</span></h1>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
                     <ul class="stars">
@@ -300,7 +332,7 @@
                                 <img src="/assets/Charlote.avif" alt="">
                             </figure>
                             <div class="person__description">
-                                <h3>Charlottee Hale</h3>
+                                <h3>Charlotte Hale</h3>
                                 <p class="person__description--position">Director, Delos Inc</p>
                             </div>
                         </div>
