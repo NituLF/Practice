@@ -1027,9 +1027,17 @@ PRICING
   }
 /* FOOTER*/
 
-    .footer__links {
-    flex-wrap: wrap;
-} 
+
+.main__list {
+    width: calc(100% / 3);
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 24px;
+}
+.links__title {
+    text-align: left;
+}
+
     .copyright {
     flex-direction: column;
     align-items: center;
@@ -1111,4 +1119,17 @@ form {
 .buttons {
     margin: 24px 0 36px 0;
 }
+
+.main__list {
+    width:calc(100% / 2);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.links__title {
+    text-align: center;
+}
+
 }
