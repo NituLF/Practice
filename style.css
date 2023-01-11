@@ -204,6 +204,32 @@ HEADER
 
  */
 
+ @keyframes slideInRight {
+   from {transform: translatex(-1000px)
+   }
+
+   to {
+    transform: translateX(0);
+   }
+ }
+
+ @keyframes slideInLeft {
+    from {transform: translatex(1000px)
+    }
+ 
+    to {
+     transform: translateX(0);
+    }
+  }
+
+ .slideInRight {
+       animation: slideInRight 1s;
+ }
+
+ .slideInLeft {
+    animation: slideInLeft 1s;
+ }
+
  header {
     padding: 100px 16px;
  }
@@ -462,9 +488,6 @@ VALUES
     margin-top: 18px; 
 }
 
-.values__column {
-}
-
 .column__icon {
     font-size: 20px;
     background-color: rgba(81, 213, 81, 0.684);
@@ -475,6 +498,7 @@ VALUES
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .column__icon2 {
@@ -644,12 +668,15 @@ PRICING
  
  */
 
+ 
+ 
+
  .testimonial__img {
-    width: 40%;
+    width: 50%;
  }
 
  .text__column {
-    width: 60%;
+    width: 50%;
     padding-left: 64px;
  }
 
@@ -669,8 +696,9 @@ PRICING
 
  .review__para {
     margin-top: 22px;
-    color: #243e63;
-    max-width: 92%;
+    font-weight: 500;
+    line-height: 1.6;
+    color: #525962;
  }
 
  .btn__left {
