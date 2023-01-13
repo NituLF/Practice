@@ -29,36 +29,36 @@
                         <a href="#signup" class="nav__link--signup">Sign Up</a>
                     </div>
                 </ul>
-            
-            <div class="btn__menu" onclick="openMenu()">
-                <i class="fas fa-bars"></i>
+
+                <div class="btn__menu" onclick="openMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Conntact Us</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link" onclick="closeMenu()">Login</a>
+                        </li>
+                        <li class="menu__list">
+                            <a href="#features" class="menu__link nav__link--signup" onclick="closeMenu()">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="menu__backdrop">
-                <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                    <i class="fas fa-times"></i>
-                </button>
-                <ul class="menu__links">
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link" onclick="closeMenu()">About</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link" onclick="closeMenu()">Blog</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link" onclick="closeMenu()">Conntact Us</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link" onclick="closeMenu()">Login</a>
-                    </li>
-                    <li class="menu__list">
-                        <a href="#features" class="menu__link nav__link--signup" onclick="closeMenu()">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
         </nav>
         <header>
             <div class="row media__row2">
@@ -84,7 +84,8 @@
             <div class="features__row slideInLeft">
                 <h3 class="section__title"> <span class="purple">FEATURES</span></h3>
                 <h1 class="section__subtitle">We Have Amazing <span class="purple">Service</span></h1>
-                <h3 class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <h3 class="features__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
                     incididunt ut labore et dolore magna aliqua.</h3>
 
                 <div class="highlights">
@@ -155,7 +156,8 @@
             <div class="row slideInRight media__row">
                 <div class="quality__text">
                     <h3 class="section__title"><span class="purple">QUALITY WORK</span></h3>
-                    <h1 class="section__subtitle">Designed & Developed by <span class="purple">Professionals.</span></h1>
+                    <h1 class="section__subtitle">Designed & Developed by <span class="purple">Professionals.</span>
+                    </h1>
                     <p class="section__para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -248,60 +250,61 @@
         </section>
         <section id="pricing">
             <div class="meddia__row slideInLeft">
-            <div class="header">
-                <h3 class="section__title"><span class="purple">PRICING</span></h3>
-                <h1 class="section__subtitle">Reasonable & Flexible <span class="purple">Plans</span></h1>
-                <p class="section__para--plan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="header">
+                    <h3 class="section__title"><span class="purple">PRICING</span></h3>
+                    <h1 class="section__subtitle">Reasonable & Flexible <span class="purple">Plans</span></h1>
+                    <p class="section__para--plan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row plans">
+                    <div class="plans__personal column">
+                        <div class="price">
+                            <h2 class="plan__title">PERSONAL</h2>
+                            <h3 class="plan__price">$17.99</h3>
+                            <h3 class="plan__time">MONTHLY</h3>
+                        </div>
+                        <div class="plan__description">
+                            <h2 class="plan__description--title">For Individuals</h2>
+                            <p class="plan__description--para">30 Templatees</p>
+                            <p class="plan__description--para">7Landing Pages</p>
+                            <p class="plan__description--para">12 Internal Pages</p>
+                            <p class="plan__description--para">Basic Assistance</p>
+                        </div>
+                        <button class="plan__btn plan__btn--personal">Buy Now</button>
+                    </div>
+                    <div class="plans__business column">
+                        <div class="plan">
+                            <h2 class="plan__title">BUSINESS</h2>
+                            <h3 class="plan__price">$37.99</h3>
+                            <h3 class="plan__time">MONTHLY</h3>
+                        </div>
+                        <div class="plan__description">
+                            <h2 class="plan__description--title">For Small Businesses</h2>
+                            <p class="business__description--para">60 Templates</p>
+                            <p class="business__description--para">15 Landing Pages</p>
+                            <p class="business__description--para">22 Internal Pages</p>
+                            <p class="business__description--para">Priority Assistance</p>
+                        </div>
+                        <button class="plan__btn plan__btn--business">Buy Now</button>
+                    </div>
+                    <div class="plans__enterprise column">
+                        <div class="price">
+                            <h2 class="plan__title">ENTERPRISE</h2>
+                            <h3 class="plan__price">$57.99</h3>
+                            <h3 class="plan__time">MONTHLY</h3>
+                        </div>
+                        <div class="plan__description">
+                            <h2 class="plan__description--title">For Large Companies</h2>
+                            <p class="plan__description--para">90 Templatees</p>
+                            <p class="plan__description--para">27 Landing Pages</p>
+                            <p class="plan__description--para">37 Internal Pages</p>
+                            <p class="plan__description--para">Personal Assistance</p>
+                        </div>
+                        <button class="plan__btn plan__btn--enterprise">Buy Now</button>
+                    </div>
+                </div>
             </div>
-            <div class="row plans">
-                <div class="plans__personal column">
-                    <div class="price">
-                        <h2 class="plan__title">PERSONAL</h2>
-                        <h3 class="plan__price">$17.99</h3>
-                        <h3 class="plan__time">MONTHLY</h3>
-                    </div>
-                    <div class="plan__description">
-                        <h2 class="plan__description--title">For Individuals</h2>
-                        <p class="plan__description--para">30 Templatees</p>
-                        <p class="plan__description--para">7Landing Pages</p>
-                        <p class="plan__description--para">12 Internal Pages</p>
-                        <p class="plan__description--para">Basic Assistance</p>
-                    </div>
-                    <button class="plan__btn plan__btn--personal">Buy Now</button>
-                </div>
-                <div class="plans__business column">
-                    <div class="plan">
-                        <h2 class="plan__title">BUSINESS</h2>
-                        <h3 class="plan__price">$37.99</h3>
-                        <h3 class="plan__time">MONTHLY</h3>
-                    </div>
-                    <div class="plan__description">
-                        <h2 class="plan__description--title">For Small Businesses</h2>
-                        <p class="business__description--para">60 Templates</p>
-                        <p class="business__description--para">15 Landing Pages</p>
-                        <p class="business__description--para">22 Internal Pages</p>
-                        <p class="business__description--para">Priority Assistance</p>
-                    </div>
-                    <button class="plan__btn plan__btn--business">Buy Now</button>
-                </div>
-                <div class="plans__enterprise column">
-                    <div class="price">
-                        <h2 class="plan__title">ENTERPRISE</h2>
-                        <h3 class="plan__price">$57.99</h3>
-                        <h3 class="plan__time">MONTHLY</h3>
-                    </div>
-                    <div class="plan__description">
-                        <h2 class="plan__description--title">For Large Companies</h2>
-                        <p class="plan__description--para">90 Templatees</p>
-                        <p class="plan__description--para">27 Landing Pages</p>
-                        <p class="plan__description--para">37 Internal Pages</p>
-                        <p class="plan__description--para">Personal Assistance</p>
-                    </div>
-                    <button class="plan__btn plan__btn--enterprise">Buy Now</button>
-                </div>
-            </div>
-        </div>
         </section>
         <section id="testimonials">
             <div class="row slideInRight media__row2">
@@ -336,6 +339,7 @@
                                 <p class="person__description--position">Director, Delos Inc</p>
                             </div>
                         </div>
+
                         <div class="buttons">
                             <button class="btn__left">
                                 <i class="fas fa-arrow-left purple"></i>
@@ -350,6 +354,15 @@
             </div>
         </section>
         <section id="contact">
+            <div class="contact__row">
+                <div class="background__img">
+                    <h2 class="contact__text">Developers all over the world are happily using Treact</h2>
+                    <div class="contact__buttons">
+                        <button class="btn media__btn contact__btn--left">Get Started</button>
+                        <button class="btn media__btn contact__btn--right">Contact Us</button>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -412,15 +425,15 @@
                     <p>c 2022 Treact Inc. All Rights Reserved.</p>
                 </div>
                 <div class="social__links">
-                        <a href="https://www.facebook.com" target="_blank">
-                            <i class="fab fa-facebook slink"></i>
-                        </a>
-                        <a href="https://www.twitter.com" target="_blank">
-                            <i class="fab fa-twitter slink"></i>
-                        </a>
-                        <a href="https://www.youtube.com" target="_blank">
-                            <i class="fab fa-youtube slink"></i>
-                        </a>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <i class="fab fa-facebook slink"></i>
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <i class="fab fa-twitter slink"></i>
+                    </a>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <i class="fab fa-youtube slink"></i>
+                    </a>
                 </div>
             </div>
         </div>
